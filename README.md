@@ -9,7 +9,6 @@
 - `lp.js`: 予約フォーム送信
 - `api/order.js`: Vercel Functionsの予約受付API
 - `assets/`: 商品画像
-- `.github/workflows/vercel.yml`: GitHub ActionsからVercelへ本番デプロイ
 - `vercel.json`: Vercel設定
 
 ## GitHub + Vercelでデプロイする流れ
@@ -28,12 +27,6 @@
 - `ORDER_NOTIFICATION_EMAIL`: 予約相談を受け取るメールアドレス
 - `ORDER_FROM_EMAIL`: 送信元メールアドレス。未設定時はResendのテスト送信元を使います
 
-GitHub Actionsからデプロイする場合は、GitHub Secretsに以下も設定してください。
-
-- `VERCEL_TOKEN`
-- `VERCEL_ORG_ID`
-- `VERCEL_PROJECT_ID`
-
-VercelのGitHub連携だけで運用する場合、GitHub Actionsは使わなくても構いません。
+VercelのGitHub連携だけで運用します。GitHub ActionsのSecrets設定は不要です。
 
 詳しい手順は [DEPLOYMENT.md](DEPLOYMENT.md) を参照してください。

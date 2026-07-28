@@ -56,19 +56,12 @@ ORDER_FROM_EMAIL=YOHAKU <your-verified-domain@example.com>
 
 未設定でもフォームはデモ受付として動きます。
 
-## 5. GitHub Actionsで自動デプロイする場合
+## 5. 自動デプロイ
 
-VercelのGitHub連携だけでも自動デプロイできます。
+VercelのGitHub連携だけで自動デプロイします。
 
-GitHub Actionsから明示的にVercelへデプロイする場合は、GitHub Secretsに以下を設定します。
-
-```text
-VERCEL_TOKEN
-VERCEL_ORG_ID
-VERCEL_PROJECT_ID
-```
-
-その後、`main` ブランチにpushすると `.github/workflows/vercel.yml` が本番デプロイを実行します。
+`main` ブランチにpushすると、Vercelが自動で再デプロイします。
+GitHub ActionsやGitHub Secretsの設定は不要です。
 
 ## 6. 更新運用
 
