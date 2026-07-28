@@ -35,3 +35,5 @@ GitHub Actionsからデプロイする場合は、GitHub Secretsに以下も設�
 - `VERCEL_PROJECT_ID`
 
 VercelのGitHub連携だけで運用する場合、GitHub Actionsは使わなくても構いません。
+
+詳しい手順は [DEPLOYMENT.md](DEPLOYMENT.md) を参照してください。
