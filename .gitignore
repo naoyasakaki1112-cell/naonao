@@ -1,0 +1,19 @@
+.DS_Store
+Thumbs.db
+
+# Local tooling/cache
+.cache/
+.pnpm-home/
+.pnpm-store/
+.vercel-global/
+node_modules/
+
+# Generated working files
+tmp/
+screenshots/
+
+# Vercel local state
+.vercel/
+
+# Logs
+*.log
